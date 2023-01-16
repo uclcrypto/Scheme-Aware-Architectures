@@ -194,15 +194,15 @@ log.info("Selected leakage model: '{}'".format(args.leakage_model))
 
 # Draws the leakage, prepares the data loaders
 log.info("Drawing according to the affine scheme")
-train_data = simulation.ASCAD(args.n_draws,
-                              args.sigma, 
-                              args.n_bits,
+train_data = simulation.ASCAD(n_samples=args.n_draws,
+                              sigma=args.sigma, 
+                              n_bits=args.n_bits,
                               order=2,
                               n_targets=args.n_targets
                               )
-val_data = simulation.ASCAD(args.n_val, 
-                            args.sigma, 
-                            args.n_bits,
+val_data = simulation.ASCAD(n_samples=args.n_val, 
+                            sigma=args.sigma, 
+                            n_bits=args.n_bits,
                             order=2,
                             n_targets=args.n_targets
                             )
