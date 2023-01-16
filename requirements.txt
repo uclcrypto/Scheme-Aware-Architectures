@@ -1,6 +1,5 @@
 certifi==2022.12.7
 charset-normalizer==3.0.1
-hadamard-cuda==0.0.0
 idna==3.4
 numpy==1.24.1
 nvidia-cublas-cu11==11.10.3.66
