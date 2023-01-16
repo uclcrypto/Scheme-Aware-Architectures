@@ -14,7 +14,7 @@ The whole python environment can be installed in a two-stage procedure. First, i
 ```
 python3 -m venv env
 source env/bin/activate
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Second, install the library for computing the Walsh-Hadamard transform on the GPU.
